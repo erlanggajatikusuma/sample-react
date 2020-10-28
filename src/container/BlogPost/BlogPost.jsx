@@ -9,7 +9,7 @@ class BlogPost extends Component {
     }
 
     getPostAPI = () => {
-        axios.get('http://localhost:3000/posts')
+        axios.get('http://localhost:3004/posts')
             .then(res => {
                 console.log(res.data)
                 this.setState({
@@ -20,7 +20,7 @@ class BlogPost extends Component {
 
     handleRemove = (data) => {
         console.log(data)
-        axios.delete(`http://localhost:3000/posts/${data}`)
+        axios.delete(`http://localhost:3004/posts/${data}`)
             .then(result => {
                 this.getPostAPI()
             })
