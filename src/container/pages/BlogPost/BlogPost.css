@@ -16,7 +16,13 @@
     margin-left: 20px;
 }
 
-.img-thumb {
+.post .img-thumb {
+    width: 200px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.post .img-thumb img {
     width: 200px;
     height: 150px;
     object-fit: cover;
@@ -32,6 +38,10 @@
     font-weight: bold;
     color: #3d4a6e;
     margin-bottom: 16px;
+}
+
+.content p.title:hover {
+    cursor: pointer;
 }
 
 .content p.desc {
